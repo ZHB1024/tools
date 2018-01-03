@@ -1,0 +1,36 @@
+学习地址：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000
+
+cd Git
+git init
+mkdir test
+cd test
+在test目录创建一个test.txt
+git add test.txt
+git commit -m "init test file"
+
+修改test.txt文件
+git add test.txt
+git commit -m "update test file"
+
+cat test.txt
+
+git log
+
+git reset --hard HEAD~1
+
+cat test.txt
+
+git reset --hard 7686d1555163583196b769920ea2ab444605c323              commit id
+
+git reflog
+
+
+git diff HEAD -- readme.txt
+
+git checkout -- readme.txt
+
+ssh-keygen -t rsa -C "2278164417@qq.com"
+
+git clone git@github.com:ZHB1024/gitskills.git
+
+
