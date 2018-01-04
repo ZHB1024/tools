@@ -1,0 +1,5 @@
+MAVEN-HOME
+D:\install\Maven\apache-maven-3.5.0
+
+path
+;%MAVEN-HOME%\bin;
