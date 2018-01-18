@@ -1,0 +1,5 @@
+
+
+1、WINDOW + R  输入 DxDiag
+
+2、WINDOW + R  输入 msinfo32
