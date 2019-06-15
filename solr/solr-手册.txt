@@ -1,24 +1,29 @@
-¹ÙÍøÏÂÔØµØÖ·£ºhttp://archive.apache.org/dist/lucene/solr/
-°²×°ºÃµÄÑ¹Ëõ°ü
+å®˜ç½‘ä¸‹è½½åœ°å€ï¼šhttp://archive.apache.org/dist/lucene/solr/
+å®‰è£…å¥½çš„å‹ç¼©åŒ…
 
 
-½«redis°²×°Îªwindow·şÎñ
+å°†rediså®‰è£…ä¸ºwindowæœåŠ¡
 https://blog.csdn.net/sweety820/article/details/79296826
-ÍøÉÏÕÒÁËÏÂ×ÊÁÏ£¬¹¤¾ßÍ¦¶à£¬µ«ÊÇ²Ù×÷×î¼òµ¥£¬×îÓÑºÃµÄÊÇNSSMÕâ¸ö¹¤¾ß£¬¹¤¾ßµÄµØÖ·ÊÇhttp://www.nssm.cc/download¡£ 
-ÕâÆªÎÄÕÂÒ²½éÉÜÁËÕâ¸ö¹¤¾ßµÄÊ¹ÓÃ£ºhttps://www.sitecoreblog.cz/en/how-to-install-solr-as-a-windows-service/
-NSSMÊ¹ÓÃ·Ç³£¼òµ¥£¬ÏÂÔØÏÂÀ´½âÑ¹ÎÄ¼ş¼Ğ£¬°ÑNSSM.exe¸´ÖÆµ½solrµÄbinÄ¿Â¼ÏÂ£¬È»ºó°´shift¼üÓÒ¼übinÎÄ¼ş¼Ğ£¬Ñ¡Ôñ²Ëµ¥¡°´Ó´Ë´¦´ò¿ªÃüÁî´°¿Ú¡±Æô¶¯cmdÃüÁî´°¿Ú£¬ 
-ÊäÈë
+ç½‘ä¸Šæ‰¾äº†ä¸‹èµ„æ–™ï¼Œå·¥å…·æŒºå¤šï¼Œä½†æ˜¯æ“ä½œæœ€ç®€å•ï¼Œæœ€å‹å¥½çš„æ˜¯NSSMè¿™ä¸ªå·¥å…·ï¼Œå·¥å…·çš„åœ°å€æ˜¯http://www.nssm.cc/downloadã€‚ 
+è¿™ç¯‡æ–‡ç« ä¹Ÿä»‹ç»äº†è¿™ä¸ªå·¥å…·çš„ä½¿ç”¨ï¼šhttps://www.sitecoreblog.cz/en/how-to-install-solr-as-a-windows-service/
+NSSMä½¿ç”¨éå¸¸ç®€å•ï¼Œä¸‹è½½ä¸‹æ¥è§£å‹æ–‡ä»¶å¤¹ï¼ŒæŠŠNSSM.exeå¤åˆ¶åˆ°solrçš„binç›®å½•ä¸‹ï¼Œç„¶åæŒ‰shifté”®å³é”®binæ–‡ä»¶å¤¹ï¼Œé€‰æ‹©èœå•â€œä»æ­¤å¤„æ‰“å¼€å‘½ä»¤çª—å£â€å¯åŠ¨cmdå‘½ä»¤çª—å£ï¼Œ 
+è¾“å…¥
 nssm install solr
+å¼¹å‡ºå¯¹è¯æ¡†
+pathä¸ºå®‰è£…binä¸‹çš„solr.cmd
+startup directioryä¸ºå®‰è£…bin
+argumentsä¸º start -f -p 8983
+è¿˜æœ‰service name
 
 
-½øÈëbin doc´°¿ÚÖĞÖ´ĞĞ£º
+è¿›å…¥bin docçª—å£ä¸­æ‰§è¡Œï¼š
 solr.cmd start
 
-ä¯ÀÀÆ÷ÊäÈë£º
+æµè§ˆå™¨è¾“å…¥ï¼š
 http://localhost:8983/solr/
 
 solr.cmd stop -all
 
 https://blog.csdn.net/sweety820/article/details/79296826
-´î½¨»·¾³µØÖ·£ºhttp://blog.csdn.net/gcy910219/article/details/61482420
-±¨´í½â¾ö£ºhttp://blog.csdn.net/u011317027/article/details/56485233?locationNum=2&fps=1
+æ­å»ºç¯å¢ƒåœ°å€ï¼šhttp://blog.csdn.net/gcy910219/article/details/61482420
+æŠ¥é”™è§£å†³ï¼šhttp://blog.csdn.net/u011317027/article/details/56485233?locationNum=2&fps=1
