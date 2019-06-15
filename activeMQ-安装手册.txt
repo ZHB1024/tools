@@ -1,0 +1,7 @@
+
+安装压缩包
+
+bin下，根据系统位数（32或64）进入 win32或wi64，双击InstallService.bat，即安装为window系统服务了。
+
+管理网址
+http://localhost:8161/admin
