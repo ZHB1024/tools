@@ -1,0 +1,24 @@
+官网下载地址：http://archive.apache.org/dist/lucene/solr/
+安装好的压缩包
+
+
+将redis安装为window服务
+https://blog.csdn.net/sweety820/article/details/79296826
+网上找了下资料，工具挺多，但是操作最简单，最友好的是NSSM这个工具，工具的地址是http://www.nssm.cc/download。 
+这篇文章也介绍了这个工具的使用：https://www.sitecoreblog.cz/en/how-to-install-solr-as-a-windows-service/
+NSSM使用非常简单，下载下来解压文件夹，把NSSM.exe复制到solr的bin目录下，然后按shift键右键bin文件夹，选择菜单“从此处打开命令窗口”启动cmd命令窗口， 
+输入
+nssm install solr
+
+
+进入bin doc窗口中执行：
+solr.cmd start
+
+浏览器输入：
+http://localhost:8983/solr/
+
+solr.cmd stop -all
+
+https://blog.csdn.net/sweety820/article/details/79296826
+搭建环境地址：http://blog.csdn.net/gcy910219/article/details/61482420
+报错解决：http://blog.csdn.net/u011317027/article/details/56485233?locationNum=2&fps=1
