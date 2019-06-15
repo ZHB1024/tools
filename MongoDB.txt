@@ -1,0 +1,68 @@
+﻿
+
+  知乎学习方法：https://www.zhihu.com/question/19882468
+  
+  中文文档：http://www.mongoing.com/docs/mongo.html
+  
+  下载地址：https://www.mongodb.com/download-center#community
+  
+  
+  
+一、可以创建配置文件mongod.cfg的方式，但是目前没有弄成功。
+  在C:\Program Files\MongoDB\Server\3.4 下 创建 mongod.cfg 文件
+  内容：
+  dbpath=C:\workFile\soft\MongoDb\data\db
+  logpath=C:\workFile\soft\MongoDb\data\log\mongod.log
+  logappend=true 
+  port=27017
+  
+二、以下是不使用配置文件的方式：
+  安装成功后
+  以管理员身份启动cmd执行：
+  #这是将mongo安装为window的服务
+  sc create MongoDB binPath= "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe --dbpath D:\java\mongodb\data\db --logpath D:\java\mongodb\data\log\mongod.log  --logappend --service"  
+  #成功后执行，启动mongodb服务：
+  net start MongoDB
+  #然后在mongo安装目录C:\Program Files\MongoDB\Server\3.4\bin\中执行新的cmd，建立连接：
+  mongo
+  #默认不需要登录，为了安全性，创建用户：
+  use admin;
+  db.createUser({user: "ZHB",pwd: "123456",roles: [  "userAdminAnyDatabase", "dbOwner" ]});
+  show collections;
+  db.system.users.find();
+  #然后，ctrl+C，断掉连接：
+  ctrl + c
+  
+  #重新创建需要认证的服务
+  sc stop MongoDB
+  sc delete MongoDB
+  sc create MongoDB binPath= "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe --dbpath D:\java\mongodb\data\db --logpath D:\java\mongodb\data\log\mongod.log  --logappend --auth --service"  
+  
+  
+  
+  
+  
+  #这是另外一种方式，安装为window服务
+  mongod.exe --logpath "C:\workFile\soft\MongoDb\data\log\mongod.log" --logappend --dbpath "C:\workFile\soft\MongoDb\data\db" --directoryperdb --serviceName MongoDB --install 
+  mongod --dbpath "C:\workFile\soft\MongoDb\data\db" --logpath "C:\workFile\soft\MongoDb\data\log\mongod.log" --auth
+  
+ 
+ db --> collection 
+操作：  
+  db
+  show dbs
+  use admin;
+  show collections;
+  db.system.users.find();
+  db.createUser({user: "admin",pwd: "admin",roles: [  "userAdminAnyDatabase", "dbOwner" ]});
+  
+  db.auth("admin","admin");
+  
+  use zhbDB;
+  db.createUser({user:"ZHB",pwd:"123456",roles:["readWrite"]});
+  
+  db.auth("zhb","123456");
+  
+  db.student.insert({_id:1,name:"zhanghuibin"});
+  
+  
